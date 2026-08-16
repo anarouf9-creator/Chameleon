@@ -1,0 +1,276 @@
+# put the people who worked on the translation here if you/they want to.
+authors:
+  - "@poolitzer"
+# put the name of your language here, in their native translation
+language: "العربية"
+# send when the bot gets added to a group
+greeting: "أهلاً بك. أنا بوت The Chameleon، وهو بوت تليجرام يجلب لعبة The Chameleon إلى مجموعتك! لتغيير إعداداتي، يمكنك تشغيل /settings (مقيد للمشرفين في المجموعات الكبيرة). أو اضغط ببساطة على /start لبدء لعبة معي :)"
+# when a game is started with /start in a group.
+# {0} mention of the player who started the game, {1} list of mentions for joined player, {2-8} settings, either the deck name or activate or deactivate (see below)
+start_game: "بدأ {0} لعبة. أنت تلعب بالإعدادات التالية:\n\n<b>الرزمة:</b> {2}\n<b>أقل عدد:</b> {3}\n<b>عدد أكبر:</b> {4}\n<b>التثبيت:</b> {5}\n<b>البطولة:</b> {6}\n<b>التقييد:</b> {7}\n<b>علامة التعجب:</b> {8}\n\nلننضم!\n\n#اللاعبون:\n{1}"
+# the button beneath the message above
+start_button: "انضمام/مغادرة"
+# if the setting above is activated
+activated: "مفعل"
+# if the setting above is deactivated
+deactivated: "معطل"
+# the pop-up a player gets when pressing on the button above
+player_joins_query: "لقد انضممت إلى اللعبة!"
+player_leaves_query: "لقد غادرت اللعبة!"
+# the pop-up a player gets when he presses the button above but no join process is running (might happen when the bot has an unexpected shutdown)
+join_no_game_running: "أنا آسف، بطريقة ما هذا الزر موجود بينما ليس من المفترض أن يكون كذلك. يرجى تشغيل /start لبدء لعبة."
+# the text appearing in the group once a player leaves/joins and the timer "runs out"
+# {0} mention of player(s)
+player_joins_text: "انضم {0} إلى اللعبة. "
+player_leaves_text: "غادر {0} اللعبة. "
+# the text in addition to the one above
+# {0} if more then three players, start from below; otherwise fail
+player_action_text: "إذا لم ينضم أو يغادر أحد خلال 30 ثانية، سينتهي الوقت و{0}"
+# see above
+start: "تبدأ اللعبة :)"
+fail: "تفشل اللعبة :("
+# the message when someone presses /start while a game is running
+game_running: "هناك لعبة قيد التشغيل بالفعل، يرجى الانتظار حتى تنتهي."
+# the message when a game failed (30 second timer runs out and not three people joined)
+game_failed: "عدد اللاعبين غير كافٍ، أنا آسف."
+# the message when a game starts
+# {0} the topic/dictionary key, {1} the list of the words
+game_succeed: "بدأت اللعبة!\n<b>الموضوع:</b>\n{0}\n<b>الكلمات:</b>\n{1}"
+# the button beneath the message above
+play_button: "إظهار الكلمة السرية"
+# the pop-up the chameleon gets when pressing the button above
+player_is_chameleon: "أنت الحرباء (Chameleon). حظاً طيباً!"
+# the pop-up the ordinary player gets when pressing the button above
+# {0} the secret word
+secret_word: "الكلمة السرية هي {0}"
+# the pop-up the player gets when pressing the button above and this game is not running (might happen when the bot has an unexpected shutdown)
+wrong_game: "أنا آسف، يبدو أن لعبتك الحالية مختلفة عن هذه. يرجى البحث عن أحدث رسالة مني بها هذا الزر (الأزرار) والضغط عليها هناك :)"
+# the message appearing after the message above, asking for the first word
+# {0} mention of the player
+first_player_say_word: "{0}، أنت أول من يعطيني كلمة. يرجى فعل ذلك."
+# the message asking every player to send a message, one after another
+# {0} mention of the player, {1} word list, consisting of the player name: players word(s), {2} the message below or nothing
+more_players_say_word: "شكراً. الآن دورك، {0}.{2}\n\nقائمة الكلمات الحالية:\n{1}"
+# this will get attached to the previous two messages in case the game is not in restricted mote
+exclamation_deactivated: "لمتابعة محادثتك، أضف ! في بداية رسالتك. لن أحتسبها كمشاركة لك حينها"
+exclamation_activated: "لإرسال إجابتك، يرجى وضع ! أمام رسالتك. سيتم تجاهل أي رسالة أخرى من البوت، لذا يمكنك متابعة المحادثة"
+# the message before the voting, showing the final word list
+# {0} final word list
+final_word_list: "قائمة الكلمات النهائية، يجب أن نذهب للتصويت لكشف من هو دوره (حرباء أم لا):\n\n{0}"
+# the message asking to vote, buttons with the names beneath
+# {0} vote list, consisting of mentions of the players: number of votes
+vote_list: "تذكر، يمكنك التصويت مرة واحدة فقط ولا يمكنك تصحيح صوتك.\nالأشخاص الذين لم يصوتوا بعد:\n\n{0}"
+# the pop-up for a successful vote
+voted: "تم تسجيل صوتك :)"
+# the pop-up for someone trying to vote again
+already_voted: "لقد صوت مسبقاً!"
+# the pop-up for someone pressing his own name (no suicide here) while voting
+vote_yourself: "لا يمكنك التصويت لنفسك!"
+# when a draw happens after everyone votes, the first player who had to say a word can decide who gets unmasked. Buttons with player names are attached
+# {0} mention of the starter, the player who has to said the first word
+draw: "{0}، حدث تعادل. بما أنك كنت في وضع غير مفضل لأنك قلت الكلمة الأولى، يمكنك تحديد من يتم كشفه"
+# if someone who is not the starter (see above) presses one of the buttons
+not_starter: "أنت لم تقل الكلمة الأولى، هل كنت تظن حقاً أن ذلك سيفلح؟ :("
+# if the chameleon wasn't found
+# {0} mention of the player unmasks, {1} mention of the chameleon, {2} secret word
+chameleon_not_found: "تم كشف {0} وتبين أنه <b>ليس</b> الحرباء، بل هو {1}! تفوز الحرباء باللعبة! كانت الكلمة السرية هي <b>{2}</b>."
+# if the chameleon was found
+# {0} mention of the chameleon
+chameleon_found: "تم كشف {0} وتبين أنه الحرباء! يمكنك محاولة تخمين الكلمة السرية الآن."
+# if the chameleon was found and only three players are there (and this is activated in the setting)
+# {0} mention of the chameleon
+chameleon_found_fewer: "تم كشف {0} وتبين أنه الحرباء! بما أنه يوجد ثلاثة لاعبين فقط الآن، تحصل على تخمينين (يمكن لمشرفي المجموعات إيقاف ذلك من الإعدادات)."
+# if the chameleon was found and 7 or 8 players are there
+# {0} mention of the chameleon
+chameleon_found_more: "تم كشف {0} وتبين أنه الحرباء! بما أن هناك أكثر من ستة لاعبين، فإن قائمة الكلمات غير مرئية، لذا احذر من الأخطاء الإملائية! (يمكن لمشرفي المجموعات إيقاف ذلك من الإعدادات)."
+# this replaces the word/topic from the list
+hidden: "مخفي"
+# if the chameleon guesses wrong and has a second guess
+# {0} mention of the chameleon
+chameleon_guess_wrong_fewer: "عذراً {0}، كان هذا تخميناً خاطئاً. حاول مجدداً ;)"
+# if the chameleon guesses wrong
+# {0} mention of the chameleon, {1} secret word
+chameleon_guess_wrong: "عذراً {0}، كان هذا تخميناً خاطئاً، الكلمة الصحيحة كانت <b>{1}</b>. تخسر الحرباء، ويفوز اللاعبون!"
+# if the chameleon guesses correctly
+# {0} mention of the chameleon
+chameleon_guess_right: "عمل ممتاز {0}، كان هذا التخمين الصحيح! تفوز الحرباء، ويخسر اللاعبون!"
+# if the chameleon guesses wrongly, but the spellchecker corrects it to the right word (comes in handy by games where the keyboard isn't given
+# {0} mention of the chameleon
+chameleon_guess_corrected: "عمل ممتاز {0}، كان هذا صحيحاً... حسناً، لكي أكون صادقاً، لم يكن تخميناً صحيحاً تماماً. لكن مدقق الإملائي الداخلي جعله الكلمة الصحيحة. عهداً، لقد فزت. يايي :)"
+# when a tournament ends, but no winner yet, so another round is started
+tournament_end: "انتهت اللعبة، ولكن لا يوجد فائز بالبطولة حتى الآن، لذا بدأت جولة جديدة. نقاط البطولة الحالية:\n{0}\n<b>الموضوع:</b>\n{1}\n<b>الكلمات:</b>\n{2}"
+# when a tournament ends and there is only one winner
+# {0} winner mention, {1} winner points, {2} other player mentions + points
+tournament_end_one: "انتهت البطولة \\o/\n\nالفائز هو {0} بـ <b>{1}</b> نقطة.\n\nالمنافسون الآخرون:\n{2}"
+# when a tournament ends and there is only one winner, and no one else got points
+# {0} winner mention, {1} winner points, {2} other player mentions + points
+tournament_end_one_super_win: "انتهت البطولة \\o/\n\nالفائز هو {0} بـ <b>{1}</b> نقطة، بينما سحق منافسيه تماماً! لقد حصلوا جميعاً على صفر نقاط، انظر إلى هؤلاء الخاسرين:\n{2}"
+# when a tournament ends with several winners
+# {0} winner mentions + points, {1} other player mentions + points
+tournament_end_several: "انتهت البطولة \\o/\n\nالفائزون هم:\n{0}\n\nالمنافسون الآخرون:\n{1}"
+# when an admin aborts a running/starting game
+abort_game: "تم إيقاف اللعبة بنجاح"
+# when someone tries to to abort a game when none is running/starting
+no_game_running: "أنا آسف، لا يمكنك إيقاف لعبة غير مطبقة"
+# when a non admin tries to abort a running/starting game
+no_admin_abort: "يجب أن تكون مشرفاً لإيقاف لعبة قيد التشغيل"
+# when a shutdown gets initiated, this message is send to the active players as a warning
+init_shutdown: "أعتذر عن الإزعاج، لكنني سأقوم بإيقاف التشغيل خلال 5 دقائق. هذا يعني أنك ستفقد \"تقدمك\" إذا لم تنتهِ من اللعبة الحالية. يرجى التوجه إلى @TheChameleon لمزيد من المعلومات."
+# when a shutdown gets initiated and players are still playing (smh)
+run_shutdown: "انتهت ال5 دقائق، أنا آسف لأنكم فقدتم تقدمكم جميعاً :("
+# when a shutdown is initiated and players want to start a new game
+group_start_shutdown: "أعتذر عن الإزعاج، لكني بحاجة لإيقاف التشغيل. يرجى التوجه إلى @TheChameleon لمزيد من المعلومات."
+# when a non admin tries to change group settings
+no_admin_settings: "يجب أن تكون مشرفاً لتغيير إعدادات المجموعة. إذا كنت مشرفاً وتلقيت هذه الرسالة، فقم بتشغيل /admins_reload."
+# when a cache reload is issued
+admins_reload: "تم إعادة تحميل قائمة المشرفين!"
+# when an admin has not PMed the bot yet
+no_pm_settings: "يجب أن تبدأ محادثة خاصة معي لكي تتمكن من تغيير إعدادات المجموعة. فقط اضغط على الزر أدناه"
+# the button mentioned above
+no_pm_settings_button: "بدء"
+# when an admin has PMed the bot, but blocked it (wtf??)
+admin_blocked_bot: "لا يمكنني إرسال رسالة خاصة لك، لأنك قمت بحظري. يرجى إلغاء الحظر والمحاولة مرة أخرى."
+# the setting message admins of groups greet greeted with in PM
+# {0} is the name of the group, a link if the group has an username
+group_setting_text: "أهلاً، تريد تغيير إعدادات عملي في المجموعة {0}، ممتاز. لمعرفة المزيد حول الإعدادات، اضغط /settings_help. يمكنك الضغط على زر التحديث لتحديث هذه الإعدادات. استخدمه إذا كنت تعتقد أن مشرفاً آخر قام بتغييرها."
+# the buttons for group settings. Only translate the strings!
+group_setting_buttons:
+  refresh: "تحديث"
+  language: "اللغة"
+  deck: "الرزمة"
+  fewer: "أقل"
+  more: "أكثر"
+  tournament: "البطولة"
+  pin: "تثبيت"
+  exclamation: "علامة التعجب"
+  restrict: "تقييد"
+# shown to the user when he presses refresh in the settings
+group_setting_refresh: "تم تحديث الإعدادات!"
+# change language of a group
+# {0} is the current language
+group_setting_languages: "لغة مجموعتك الحالية هي <b>{0}</b>. اختر اللغة التي تريد التغيير إليها.\n\nفي حال كنت تريد ترجمة لغة أو الإبلاغ عن خطأ مطبعي، اضغط /translation"
+# change deck of a group
+# {0} is the current language
+group_setting_deck_language: "اختر الرزمة التي تريدها. ابدأ باللغة التي يجب أن تكتب بها، <b>{0}</b> هي اللغة الحالية لمجموعتك."
+# {0} is the current deck
+group_setting_decks: "رزمة مجموعتك الحالية هي <b>{0}</b>. اختر الرزمة التي تريد التغيير إليها.\n\nفي حال كنت تريد إنشاء رزمة أو الإبلاغ عن خطأ مطبعي، اضغط /deck"
+# activate fewer setting of group
+group_setting_fewer_activate: "تم تفعيل إعداد الحد الأدنى!"
+# deactivate fewer setting of group
+group_setting_fewer_deactivate: "تم تعطيل إعداد الحد الأدنى!"
+# activate more setting of group
+group_setting_more_activate: "تم تفعيل إعداد الأكثر!"
+# deactivate more setting of group
+group_setting_more_deactivate: "تم تعطيل إعداد الأكثر!"
+# activate tournament mode of group
+group_setting_tournament_activate: "تم تفعيل وضع البطولة!"
+# deactivate tournament mode of group
+group_setting_tournament_deactivate: "تم تعطيل وضع البطولة!"
+# activate pin setting of group
+group_setting_pin_activate: "تم تفعيل إعداد التثبيت!"
+# deactivate pin setting of group
+group_setting_pin_deactivate: "تم تعطيل إعداد التثبيت!"
+# being an admin which can pin is required
+group_setting_pin_required: "يجب أن أكون مشرفاً لديه صلاحية تثبيت الرسائل لتفعيل هذا الإعداد"
+# activate restrict mode of group
+group_setting_restrict_activate: "تم تفعيل وضع التقييد!"
+# deactivate restrict mode of group
+group_setting_restrict_deactivate: "تم تعطيل وضع التقييد!"
+# being an admin which can restrict member is required
+group_setting_restrict_required: "يجب أن أكون مشرفاً لديه صلاحية إضافة أعضاء، ترقية المشرفين، وتقييد الأعضاء لتفعيل هذا الوضع"
+# activate exclamation setting of group
+group_setting_exclamation_activate: "مفعل، المشاركات التي تبدأ بـ ! يتم احتسابها."
+# deactivate exclamation setting of group
+group_setting_exclamation_deactivate: "معطل، المشاركات بدون علامة ! في البداية يتم احتسابها."
+# if an error happens somewhere, we tell the user about it
+error: "أهلاً. يؤسفني إبلاغك أن خطأً ما حدث أثناء محاولة معالجة تحديثك. سيتم إعلام المطورين."
+# if a user wants to change their language
+# {0} name of their current language
+private_language: "أهلاً. لغتك الحالية هي {0}، اختر اللغة التي تريدها من الأزرار أدناه :)"
+# if a user changed their language
+# {0} name of their selected language
+private_language_selected: "عظيم، {0} هي لغتك من الآن فصاعداً!"
+# if a random idiot presses buttons
+user_not_in_game: "أهلاً، يجب أن تكون في اللعبة لتفعل هذا. ربما في الجولة القادمة؟"
+# the rules, presented when someone hasn't played the game yet or runs /game_rules
+rules: "<b>الحرباء - اللعبة</b> <i>(قواعد بالإنجليزية، مخصصة لبوت التليجرام)</i>\n\n
+• بعد بدء اللعبة، يصبح أحد اللاعبين هو الحرباء، والباقون لاعبون عاديون\n
+• يُعرض موضوع مع قائمة كلمات تابعة له، مع زر مرتبط بها\n
+• إذا كنت لاعباً وضغطت على هذا الزر، ستظهر لك إحدى كلمات القائمة (تسمى الكلمة السرية) - يحصل الجميع على نفس الكلمة بالطبع. أما إذا كنت الحرباء، سيتم إعلامك بهذه الحقيقة بدلاً من ذلك\n
+• الآن يطلب البوت من اللاعبين واحداً تلو الآخر وصف الكلمة السرية.\n
+• إذا كنت لاعباً، حاول وصف الكلمة السرية بطريقة تجعل الحرباء عاجزة عن تخمينها؛ ولكنها تجعل اللاعبين الآخرين متأكدين تماماً أنك لست الحرباء\n
+• إذا كنت الحرباء، عليك اختيار وصف بناءً على معرفتك المحدودة للغاية. حاول الاندماج بخيارك!\n
+• بعد أن يقول الجميع كلمة، يصوت الجميع على من يعتقدون أنه الحرباء. ويتم كشف دور الشخص الحاصل على أكبر عدد من الأصوات\n
+• إذا كان لاعباً عادياً، تفوز الحرباء!
+• إذا كانت الحرباء، ستحاول تخمين الكلمة السرية. إذا كان تخمينها صحيحاً تماماً، تفوز أيضاً؛ وإلا يفوز اللاعبون!"
+# introduction when there is a new player, prepended to the rules
+rules_prepend: "أهلاً، لدينا لاعبون جدد. ستدأ اللعبة خلال 30 ثانية، دعني أعرض القواعد سريعاً للجدد:\n\n"
+# used in the strings below
+here: "هنا"
+# the deck command reply
+# {0} and {1} will be links, instead of the url will the translation of here be used. Tell the group if that's a problem
+deck: "الرزم هي مجموعة من \"البطاقات\". يمكنك إنشاء رزم جديدة أو تغيير الرزم الحالية. وهي ملفات json بسيطة. في حال قمت بإنشاء رزمة جديدة، ضع في اعتبارك أنك بحاجة لتمرير مفتاحين: اللغة والاسم. اللغة هي لغة الرزمة، والاسم هو اسم رزمتك. اجعل كليكما بحرف كبير. داخل ملف json، حدد المفاتيح التي تمثل موضوع الكلمات، ثم أنشئ قائمة بالكلمات المناسبة. يُسمح فقط بالنصوص في القائمة. يُنصح بـ 16 كلمة لكل موضوع، ولكنها ليس شرطاً. يمكنك الاطلاع على التطبيقات الفعلية {0} وانضم إلينا عبر {1} في حال كانت لديك أسئلة أو أردت إرسال ملف."
+# the translation command reply
+# {0} - {2} will be links, instead of the url will the translation of here be used. Tell the group if that's a problem
+translation: "يمكنك ترجمة البوت بأكمله :O الملفات هي ملفات .yaml، يجب أن تكون قابلة للتعديل في أي برنامج نصوص أساسي، ولكنني أنصح بـ Notepad ++ :) إذا قبلت هذا التحدي حقاً، يمكنك العثور على الترجمات الحالية {0}. بمجرد تحميل الملف الأساسي (يُنصح بـ en لأنه الملف الأكثر تحديثاً دائماً)، قم بإعادة تسميته باستخدام كود ISO 639-1 للغتك. يُنصح برمز الحرفين ولكن ليس إلزامياً. ترجم الأجزاء الموجودة بين علامات التنصيص. في حال كنت تريد استخدام علامات التنصيص داخل نصوصك، قم بتجنبها هكذا: <code>\\\"</code> . اترك الأقواس المعقوفة كما هي ولا تغير عددها. تنسيق التليجرام مدعوم بوسوم html، وهي تعمل كما هو موضح {1}. بعد الانتهاء، انضم إلينا {2} لإرسال هذا الملف أو لطرح المزيد من الأسئلة."
+# if the group id is not known. Can happen if someone obfuscates the start command or the groups id changed while the bot is offline
+group_not_found: "أهلاً، أنا آسف، لكني لا أستطيع العثور على مجموعتك في قاعدة بياناتي. إما أنك تقوم بحيل هنا، أو أنه خطأ من جهتي لأنني كنت غير متصل. في هذه الحالة، قم بتشغيل /settings من دردشة المجموعة مرة أخرى :)"
+# start message in private
+greeting_private: "أهلاً بك، أنا بوت الحرباء :) يمكنك لعب لعبة الحرباء معي، فقط أضفني إلى مجموعتك. إذا كنت تريد تغيير اللغة التي أحدثك بها في الخاص، اضغط /language. ولا تنس أن تبتسم. على الأقل من حين لآخر."
+# help message in group.
+help_group: "أهلاً، تريد بعض المساعدة، عظيم. ليس لدي سوى ثلاثة أوامر رئيسية في المجموعات قد تحتاجها:\n/start - بدء لعبة\n/settings - [للمشرفين فقط في المجموعات الكبيرة] تغيير إعداداتي في المجموعة\n/nextgame - يضيفك (أو يزيلك) من قائمة اللعبة القادمة لهذه المجموعة. إذا كنت فيها، سأقوم بإعلامك عندما تبدأ لعبة\n\nبغض النظر عن ذلك، أستجيب أيضاً لهذه الأوامر:\n/abort_game - [للمشرفين فقط في المجموعات الكبيرة] إيقاف اللعبة إن وجدت لعبة جارية الآن\n/admins_reload - نظراً لأنه يتم تخزين المشرفين مؤقتاً لمدة ساعة، قد ترغب في تشغيل هذا إذا لم يتعرف عليك البوت كَمشرف، أو لم يعد من المفترض أن يفعل ذلك :O\n/id - إظهار معرف المجموعة\n\nفي حال كنت بحاجة إلى مساعدة بشرية في شيء ما، انضم إلينا عبر @TheChameleonSupport. سنكون سعداء بمساعدتك."
+# help message in private.
+help_private: "أهلاً، تريد بعض المساعدة، عظيم. أستجيب للأوامر التالية في الخاص:\n/language - تغيير اللغة التي أحدثك بها في الدردشة الخاصة\n/settings_help - يساهم في فهم إعدادات المجموعة\n/translation - يعرض لك رسالة مساعدة حول كيفية إجراء الترجمات\n/deck - يعرض لك كيفية إضافة رزمتك الخاصة\n\nفي حال احتجت لمساعدة بشرية في شيء ما، انضم إلينا عبر @TheChameleonSupport. سنكون سعداء بمساعدتك."
+# message which gets send to people in private when a new game is started and they are on the nextgame list
+# {0} group name
+nextgame: "أهلاً بك. بدأت لعبة جديدة للتو في {0} وأراهن أنهم يتمنون مشاركتك في المرح."
+# message which gets send to people in private which used the /nextgame command and weren't in the list before
+# {0} group name
+nextgame_added: "أهلاً. لقد تم إضافتك إلى قائمة اللعبة القادمة للمجموعة {0}, سأقوم بإعلامك فور بدء لعبة جديدة. بمجرد مشاركتك في لعبة ناجحة، سأقوم بإزالتك من تلك القائمة (حتى لا أزعجك بلا داعٍ :). إذا كنت تريد إزالتف بنفسك، أرسل أمر /nextgame مرة أخرى في المجموعة، وسأقوم بإزالتك حينها"
+# message which gets send to people in private which used the /nextgame command and were in the list before
+# {0} group name
+nextgame_removed: "لقد تمت إزالتك من قائمة اللعبة القادمة للدردشة {0}"
+# message which gets send to people in the group when they used /nextgame and haven't pmed the bot yet
+nextgame_pm: "أهلاً. لاستخدام هذا الأمر، تحتاج إلى بدء محادثة خاصة معي. فقط اضغط على الزر أدناه."
+# message which gets send to people in the group when they used /nextgame and blocked the bot (wtf)
+nextgame_block: "يا هذا. إذا كنت تريد مني مراسلتك على الخاص، ما كان يجب أن تحظرني. قم بإلغاء الحظر وحاول مرة أخرى..."
+# message which gets send if someone uses the /settings_help command
+settings_help: "أهلاً، نظراً لوجود عدد غير قليلة من الإعدادات للمجموعة، فقد تم تقسيمها. فقط استخدم الأزرار أدناه للتنقل."
+# the following strings are explanations for the settings, triggered by the command above
+language_help: "<b>اللغة</b>: تغيير لغتي في مجموعتك. إذا كنت تريد معرفة المزيد حول كيفية إضافة لغتك الخاصة، اضغط /translation"
+deck_help: "<b>الرزمة</b>: رزمة البطاقات التي أستخدمها في مجموعتك. تتضمن البطاقات عادة 16 كلمة مختلفة تنتمي إلى موضوع واحد. أختار عشوائياً موضوعاً ومنه الكلمة السرية للجولة. يمكنك إضافة رزمتك الخاصة، اضغط /deck لتتعلم كيف."
+fewer_help: "<b>الحد الأدنى</b>: إذا كان هناك ثلاثة لاعبين فقط يلعبون (وتم تفعيل هذا)، فإن الحرباء، إذا تم القبض عليها، تحصل على تخمينين."
+more_help: "<b>أكثر</b>: إذا كان هناك 7 أو 8 لاعبين يلعبون (وتم تفعيل هذا)، تختفي الكلمات بمجرد أن يقول الجميع كلمتهم، مما يجعل من الصعب على الحرباء تخمين الكلمة الصحيحة."
+tournament_help: "<b>البطولة</b>: إذا تم تفعيل هذا الوضع، يتم إدخال نظام النقاط. إذا هربت الحرباء دون أن يتم كشفها، تحصل على نقطتين. إذا تم القبض عليها ووجدت الكلمة الصحيحة، تحصل على نقطة واحدة. وإذا لم تفعل، يحصل كل لاعب على نقطتين. أول لاعب يصل إلى 5 نقاط يفوز."
+pin_help: "<b>التثبيت</b>: بمجرد التفعيل، سأقوم بتثبيت قائمة الكلمات بصمت لكي يتمكن اللاعبون من العثور عليها بسهولة بمجرد بدء اللعبة. سأقوم بتثبيت الرسالة المثبتة القديمة (إن وجدت) بصمت مرة أخرى عند انتهاء اللعبة. لتفعيل هذا الإعداد، تحتاج إلى جعلي مشرفاً بصلاحيات التثبيت."
+restrict_help: "<b>التقييد</b>: بمجرد التفعيل، سأقوم بتقييد الجميع من الكتابة عدا الشخص الذي دور دوره خلال مرحلة قول الكلمة. يمكن للجميع الكتابة مرة أخرى بعد انتهاء هذه المرحلة. لكي يعمل هذا، سأقوم بترقية هؤلاء المستخدمين إلى مشرفين بصلاحيات إضافة أعضاء، نظراً لأن المشرفين غير مقيدين. يتم استعادة صلاحيات الدردشة الأصلية بعد المرحلة. لتفعيل هذا الإعداد، تحتاج إلى جعلي مشرفاً بصلاحيات إضافة مشرفين جدد، تقييد الأعضاء، وإضافة أعضاء. يمكنك القراءة هنا إذا كنت تريد معرفة السبب: https://t.me/TheChameleonSupport/8\n<i>انتباه:</i> تحتسب كل رسالة كمشاركة كلمة في مرحلة قول الكلمة. يتم تجاهل إعداد علامة التعجب تماماً."
+exclamation_help: "<b>علامة التعجب</b>: علامة التعجب جزء أساسي من الطريقة التي تلعب بها مجموعتك هذه اللعبة. في الإعداد القياسي، يكون هذا معطلاً، مما يعني أن الرسائل التي لا تحتوي على علامة تعجب في البداية يتم احتسابها، بينما الرسائل التي تبدأ بها يتم تجاهلها. على الرغم من أن ذلك يبدو طبيعياً أكثر، إلا أن هذا السلوك قد يؤدي إلى إدخالات خاطئة عندما يتابع الأشخاص محادثة يجرونها. يمكنك تغيير هذا إلى مفعل، مما يقلب هذا السلوك. فقط الرسائل التي تبدأ بعلامة تعجب يتم احتسابها. يبدو هذا غريباً بعض الشيء، ولكنه يلغي تماماً إمكانية الإدخالات الخاطئة.\n<i>انتباه:</i> يتم تجاهل هذا الإعداد عندما تكون اللعبة في وضع التقييد، حيث لا يمكن إجراء محادثة أثناء مرحلة الإدخال."
+# the following strings are for stats
+# these will be for private persons, accessible with the inline mode of the bot
+# if someone who has not played the game yet tries to get their stats
+# this will be the title of the result
+private_stats_title: "احصل على إحصائياتك"
+# this will be the description
+private_stats_description: "فقط اضغط علي. لا يهم ما تكتبه"
+# this will be the actual message when they press on the result
+private_stats_text: "<b>إحصائيات لـ {0}</b>\n\nالألعاب الملعوبة: {1} (المركز {11} من {17} لاعباً)\nالألعاب المفوز بها: {2} ({3}% من جميع الألعاب الملعوبة)\nالألعاب الخاسرة: {4}\nاللاعب الأول: {5} ({6}% من الألعاب الملعوبة)\n\nالبطولات الملعوبة: {12} (المركز {18})\nالبطولات المفوز بها: {13} ({14}% من جميع البطولات)\nالبطولات الخاسرة: {15}\n\nكنت الحرباء: {7} ({8}% من الألعاب الملعوبة)\nفزت كحرباء: {9} ({10}% من وقت اللعب كحرباء، {16}% من الانتصارات العامة)"
+# these are for people playing before the 4. February, where chameleon won was introduced
+# this will be added to the inline message
+private_old_stats: "\n\nملاحظة: لقد لعبت اللعبة قبل الرابع من فبراير 2020، لذا فإن إحصائياتك العامة تختلف قليلاً. يرجى تشغيل /stats في الخاص معي لمعرفة المزيد حول هذا."
+# this will be on the button under the inline result
+private_old_button: "/stats"
+# and this to the /stats command
+private_old_stats_command: "\n\n\nلقد لعبت هذه اللعبة لفترة طويلة الآن. في الواقع، قبل الرابع من فبراير 2020 على الأقل. هذا يعني أن إحصائياتك الفعلية أعلى قليلاً مما تم عرضه للتو. حدث هذا لأن فوز الحرباء تم إدخاله في هذا التاريخ، ولإبقاء بقية الإحصائيات مع هذا الحقل الجديد، تم إجراء قطع مباشر لأرقامك. لكن القديمة منها محفوظة ويمكن عرضها الآن:\nقبل الرابع، أنت:\n\nلعبت {0} لعبة (أي إجمالاً {1} لعبة)\nفزت بـ {2} لعبة (أي {3}% قبل الرابع، وبشكل عام {4} - {5}%)\nخسرت {6} لعبة ({7} لعبة إجمالاً)\nكنت اللاعب الأول {8} مرة ({9}% قبل الرابع، {10} مرة إجمالاً - {11}%)\nوكنت الحرباء {12} مرة ({13}% قبل، {14} مرة إجمالاً - {15}%)\n\nكما ترى، البطولات لم تتأثر (فهي محسوبة بشكل منفصل، لذا ترى الرقم كاملاً)، وكذلك الألعاب التي بدأت."
+# about groups stats
+group_stats: "لعبت هذه المجموعة {0} لعبة (المركز {2} من {3} مجموعات) و{1} بطولة (المركز {4}) \\o/"
+# when someone presses the join button while the game is starting
+join_while_starting: "أهلاً، لقد بدأت اللعبة بالفعل، عذراً. سيتم إزالة هذا الزر لحظياً."
+# when someone presses an old join button while a different game is running
+join_old_button: "أهلاً، هذا زر قديم، يرجى استخدام الزر الخاص باللعبة الحالية."
+# when someone leaves but the bot faces a flood error
+player_leaves_query_flood: "لقد غادرت اللعبة!\n\nأواجه مهلة تدفق ولا يمكنني تعديل الرسالة الآن، لكنك غادرت، صدقني."
+# when someone joins but the bot faces a flood error
+player_joins_query_flood: "لقد انضممت إلى اللعبة!\n\nأواجه مهلة تدفق ولا يمكنني تعديل الرسالة الآن، لكنك انضممت، صدقني."
+# when someone joins, already got the callback answered, but the game started before he was added to the list
+# {0} mention of the player
+player_joins_while_starting: "أهلاً، أنا آسف، لكنك انضممت متأخراً بثانية يا {0}, لقد فاتتك اللعبة."
